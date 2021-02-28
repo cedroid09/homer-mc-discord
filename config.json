@@ -1,0 +1,15 @@
+{
+	"discord": {
+			"authtoken": ""
+	},
+	"mcrcon": {
+			"path": "../mcrcon/mcrcon",
+			"host": "127.0.0.1",
+			"password": ""
+	},
+	"minecraft": {
+			"host": "",
+			"hostname": "homer",
+			"port": "25565"
+	}
+}

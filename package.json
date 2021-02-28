@@ -1,10 +1,10 @@
 {
-	"name": "University of Michigan Minecraft Server Discord Bot",
-	"version": "2.1.0",
-	"description": "Check the status of the University of Michigan's Minecraft servers",
+	"name": "Homer, the operational Minecraft Server Discord Bot",
+	"version": "1.0",
+	"description": "Operate and manage a Minecraft server operations",
 	"main": "bot.js",
-	"author": "Amal Bansode",
-	"url":"http://amalbansode.com",
+	"author": "Cedric Poottaren",
+	"url":"https://cedric.poottaren.com",
 	"license":"GPL-3.0-or-later",
 	"dependencies": {
 		"discord.js": "^11.5.1",
