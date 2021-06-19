@@ -1,10 +1,9 @@
 /*
  * MinecraftDiscordBot.js — A script to power a Discord bot that checks
  * the status of specified Minecraft servers.
- * Original author: Amal Bansode
- * Fork by: Cedric Poottaren 
- * https://cedric.poottaren.com
- * 
+ * Copyright (C) 2019 Amal Bansode
+ * http://amalbansode.com
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -216,16 +215,14 @@ async function mcrcon_cmd(command) {
 
 // Query mc server for availability
 async function checkServerStatus() {
-        serv.init(mc_server_addr, parseInt(mc_server_port), () => {
-                if (serv.online) {
-                        return true;
-                }
-                else {
-                        return false;
+        return new Promise(resolve => {
+                for (const name in servIP) {
+                        const [host, port] = servIP[name].split(':'); // Splitting into ip and port
+                        serv.init(host, parseInt(port), () => {
+                                resolve(serv.online);
+                        });
                 }
         });
-
-        return serv;
 }
 
 // Updates the in-discord status of the server and number of players in-world
