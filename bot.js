@@ -1,9 +1,10 @@
 /*
  * MinecraftDiscordBot.js — A script to power a Discord bot that checks
  * the status of specified Minecraft servers.
- * Copyright (C) 2019 Amal Bansode
- * http://amalbansode.com
- *
+ * Original author: Amal Bansode
+ * Fork by: Cedric Poottaren 
+ * https://cedric.poottaren.com
+ * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
